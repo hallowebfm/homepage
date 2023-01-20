@@ -1,0 +1,27 @@
+<header>
+    <div class="container">
+        <nav class="navbar is-transparent">
+            <div class="navbar-brand">
+                <a class="navbar-item navbar-brand__title " href="{{ '/' | url }}">
+                    <img src="{{ '/template/img/halloweb_logo.svg' | url }}" id="logo"/>
+                </a>
+
+                <div class="navbar-burger" data-target="navigation-items">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div id="navigation-items" class="navbar-menu">
+                <div class="navbar-end">
+                    {% for entry in collections.all | eleventyNavigation %}
+                        <a class="navbar-item {% if entry.url == page.url %} nav-item-active{% endif %}" 
+                    href="{{ entry.url | url }}">
+                            {{ entry.title }}
+                        </a>
+                    {%- endfor %}
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>

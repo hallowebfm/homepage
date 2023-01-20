@@ -1,0 +1,29 @@
+#logo {
+  height: 28px;
+}
+
+.footer {
+  background-color: transparent;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.marginTop30{
+  margin-top: 30px;
+}
+
+
+.marginLeft25{
+  margin-left: 25px;
+}
+
+.hrSpacer {
+  margin: 60px 0;
+}
+
+.profilePicture {
+  padding: 10px;
+  padding-bottom: 5px;
+}
