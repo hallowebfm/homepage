@@ -92,9 +92,9 @@ layout: layouts/base.njk
                     <div class="column is-align-self-center">
                         <div class="marginLeft25">
 
-                            <h4>Jacob Pawlik</h4>
+                            <h4>Jacob „der Kuba“ Pawlik</h4>
                             <div>
-                               Jacob Pawlik ist seit 2010 als agiler Full-Stack-Developer tätig und hilft dabei Webapplikationen zu entwickeln, die den größten Mehrwert für den Kunden bringen. Er legt besonderen Wert auf eine hohe Qualität und Zuverlässigkeit des Codes, aber auch darauf, dass die Developer-Experience nicht zu kurz kommt. Er ist Autor des Buches “Professionelle Webentwicklung mit Stenciljs”
+                               Seit 2010 ist Jacob als agiler Full-Stack-Developer tätig und hilft dabei Webapplikationen zu entwickeln, die den größten Mehrwert für den Kunden bringen. Er legt besonderen Wert auf eine hohe Qualität und Zuverlässigkeit des Codes, aber auch darauf, dass die Developer-Experience nicht zu kurz kommt. Er ist Autor des Buches “Professionelle Webentwicklung mit Stenciljs”
                             </div>
                             <hr/>
                             <p>
@@ -113,4 +113,9 @@ layout: layouts/base.njk
     </div>
 </section>
 
-<script src="template/js/main.js"></script>
+{% set js %}
+{% include "template/js/main.js" %}
+{% endset %}
+<script>
+    {{ js | jsmin | safe }}
+</script>

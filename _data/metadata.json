@@ -1,8 +1,8 @@
 {
   "title": "hellowebfm",
-  "url": "https://wallowebfm.tech",
+  "url": "https://hallowebfm.tech",
   "language": "de",
-  "description": "Die Seite für usneren Podcast",
+  "description": "Hallo Web - der Developer Podcast",
   "feed": {
     "subtitle": "I am writing about my experiences as a naval navel-gazer.",
     "filename": "feed.xml",

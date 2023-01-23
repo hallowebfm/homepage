@@ -8,6 +8,8 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 
+const { minify } = require("terser");
+
 module.exports = function (eleventyConfig) {
   // Copy the `img` and `css` folders to the output
   eleventyConfig.addPassthroughCopy("img");
@@ -102,6 +104,25 @@ module.exports = function (eleventyConfig) {
     ui: false,
     ghostMode: false,
   });
+
+  eleventyConfig.addNunjucksAsyncFilter(
+    "jsmin",
+    async function (code, callback) {
+      try {
+        const minified = await minify(code, {
+          compress: true,
+          mangle: {
+            toplevel: true,
+          },
+        });
+        callback(null, minified.code);
+      } catch (err) {
+        console.error("Terser error: ", err);
+        // Fail gracefully.
+        callback(null, code);
+      }
+    }
+  );
 
   return {
     // Control which files Eleventy will process

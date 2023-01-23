@@ -29,6 +29,12 @@
       </div>
     </footer>
 
-    <!-- Current page: {{ page.url | url }} -->
+    {% set js %}
+    {% include "template/js/menu.js" %}
+    {% endset %}
+    <script>
+      {{ js | jsmin | safe }}
+    </script>
+
   </body>
 </html>
