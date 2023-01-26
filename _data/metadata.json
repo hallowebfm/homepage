@@ -2,16 +2,16 @@
   "title": "hellowebfm",
   "url": "https://hallowebfm.tech",
   "language": "de",
-  "description": "Hallo Web - der Developer Podcast",
+  "description": "Aus dem dem Alltag von Software-Entwicklern. Wir sprechen wöchentlich über Themen zu Web-Technologien, agilem Arbeiten und Developer-Experience.",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://example.com/"
+    "id": ""
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://example.com/feed/feed.json"
+    "url": ""
   },
   "author": {
     "name": "Jacob Pawlik",
