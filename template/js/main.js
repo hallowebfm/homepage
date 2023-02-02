@@ -9,7 +9,7 @@ const cardTemplate = ({
   imageUrl,
   season,
   episode,
-}) => `<div class="column">
+}) => `<div class="column displayGrid">
                 <div class="card">
                     <div class="card-image">
                     <a href="${link}">

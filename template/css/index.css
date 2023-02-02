@@ -27,3 +27,7 @@
   padding: 10px;
   padding-bottom: 5px;
 }
+
+.displayGrid {
+  display: grid;
+}
