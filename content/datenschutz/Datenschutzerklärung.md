@@ -1,11 +1,12 @@
 ---
 layout: layouts/static-site.njk
 eleventyNavigation:
-    key: Datenschutzerklärung
-    order: 5
+  key: Datenschutzerklärung
+  order: 5
 permalink: "content/datenschutz.html"
 ---
-# Datenschutzerklärung 
+
+# Datenschutzerklärung
 
 ## 1. Datenschutz auf einen Blick
 
@@ -69,8 +70,8 @@ Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kom
 
 Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
 Jacob Pawlik
-Rudolf-Amelunxen-Straße 48
-50939 Köln
+Ubierweg 7
+50354 Hürth
 
 Telefon: +49 221 886 683 00
 E-Mail: jacob.pawlik@web.de
