@@ -88,8 +88,14 @@ fetch(url)
         imageUrl: episode
           .getElementsByTagName("itunes:image")[0]
           .getAttribute("href"),
-        season: episode.getElementsByTagName("itunes:season")[0].textContent,
-        episode: episode.getElementsByTagName("itunes:episode")[0].textContent,
+        season:
+          episode.getElementsByTagName("itunes:season") &&
+          episode.getElementsByTagName("itunes:season").length > 0 &&
+          episode.getElementsByTagName("itunes:season")[0].textContent,
+        episode:
+          episode.getElementsByTagName("itunes:episode") &&
+          episode.getElementsByTagName("itunes:episode").length > 0 &&
+          episode.getElementsByTagName("itunes:episode")[0].textContent,
       };
     });
 
@@ -99,5 +105,5 @@ fetch(url)
   })
   .catch(function (error) {
     // console.log(error);
-    console.log("Cannot request the rss of the podcast");
+    console.log("Cannot request the rss of the podcast", error);
   });
