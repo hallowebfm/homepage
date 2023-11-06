@@ -8,21 +8,15 @@ permalink: "content/impressum.html"
 
 ## Impressum
 
-Angaben gemäß § 5 TMG
-Jacob Pawlik
-Ubierweg 7
-50354 Hürth
+XXXXX
 
 ## Kontakt
 
-Telefon: +49 221 888 683 00
-E-Mail: jacob@derkuba.de
+XXXXX
 
 ## Redaktionell Verantwortlicher
 
-Jacob Pawlik
-Ubierweg 7
-50354 Hürth
+XXXXXX
 
 ## Haftung für Inhalte
 
